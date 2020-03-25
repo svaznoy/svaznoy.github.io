@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бэтмен 2021 - страница о фильме</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic"
+        rel="stylesheet">
     <!-- Шрифт робото -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="/svaznoy.github.io/css/style.css">
@@ -16,7 +18,7 @@
     <div class="container">
         <!-- Шапка сайта с логотипом, поиском, юзером. -->
         <header class="header">
-            <div class="logo">КиноПульс</div>
+            <div class="logo"><a href="#" class="logo__link">КиноПульс</a></div>
             <!-- /.logo -->
             <form action="" class="search">
                 <input type="search" class="search-input" placeholder="Фильмы, сериалы, актеры">
@@ -26,12 +28,131 @@
             </form>
             <!-- /.search -->
             <div class="user">
-                <img src="/svaznoy.github.io/img/header/bookmark.svg" alt="">
-                <img src="/svaznoy.github.io/img/header/avatar.jpg" alt="" class="avatar">
+                <button class="bookmark"><img src="/svaznoy.github.io/img/header/bookmark.svg" alt="bookmark"></button>
+                <button class="avatar"></button>
             </div>
             <!-- /.user -->
         </header>
         <!-- /.header -->
+
+        <main class="main">
+            <h1 class="title">Бэтмен</h1>
+            <small class="title-en">The Batman</small> <!-- /.title-en -->
+            <div class="info">
+                <div class="movie-info">
+                    <span class="tag">Фильм</span> <!-- /.tag -->
+                    <span class="country">США, 2021 год</span> <!-- /.country -->
+                    <a href="#" class="play">Смотреть трейлер</a>
+
+                </div>
+                <!-- /.movie-info -->
+                <a href="" class="more">Подробнее</a>
+                <!-- /.more -->
+            </div>
+            <!-- /.info -->
+            <!-- /.title -->
+            <div class="content">
+                <div class="short-info">
+                    <img src="/svaznoy.github.io/img/content/cover.jpg" alt="" class="poster">
+                    <button class="button">Буду смотреть</button> <!-- /.button -->
+                    <h3 class="actors-title">В гавных ролях:</h3>
+                    <!-- /.actors-title -->
+                    <ul class="actors-list">
+                        <li class="actors-list-item">Роберт Паттинсон</li>
+                        <!-- /.actors-list-item -->
+                        <li class="actors-list-item">Зои Кравиц</li>
+                        <!-- /.actors-list-item -->
+                        <li class="actors-list-item">Колин Фаррелл</li>
+                        <!-- /.actors-list-item -->
+                        <li class="actors-list-item">Питер Сарсгаард</li>
+                        <!-- /.actors-list-item -->
+                        <li class="actors-list-item">Пол Дано</li>
+                        <!-- /.actors-list-item -->
+                        <li class="actors-list-item">Энди Серкис</li>
+                        <!-- /.actors-list-item -->
+                        <li class="actors-list-item">Джеффри Райт</li>
+                        <!-- /.actors-list-item -->
+                        <li class="actors-list-item">Джон Туртурро</li>
+                        <!-- /.actors-list-item -->
+                        <li class="actors-list-item">Макс Карвер</li>
+                        <!-- /.actors-list-item -->
+                        <li class="actors-list-item">Кон О’Нилл</li>
+                        <!-- /.actors-list-item -->
+                    </ul>
+                    <!-- /.actors-list -->
+                </div>
+                <!-- /.short-info -->
+                <div class="full-info">
+                    <nav class="tabs">
+                        <a href="#" class="tabs-item tabs-item-active">Описание</a>
+                        <!-- /.tabs-item -->
+                        <a href="#" class="tabs-item">Рецензии</a>
+                        <!-- /.tabs-item -->
+                        <a href="#" class="tabs-item">Премьеры</a>
+                        <!-- /.tabs-item -->
+                        <a href="#" class="tabs-item">Актеры</a>
+                        <!-- /.tabs-item -->
+                        <a href="#" class="tabs-item">Награды</a>
+                        <!-- /.tabs-item -->
+                        <a href="#" class="tabs-item">Факты</a>
+                        <!-- /.tabs-item -->
+                        <a href="#" class="tabs-item">Сайты</a>
+                        <!-- /.tabs-item -->
+                        <a href="#" class="tabs-item tabs-item-bookmark">
+                            <img src="/svaznoy.github.io/img/content/bookmark-icon.svg" alt="bookmark">
+                        </a>
+                        <!-- /.tabs-item -->
+
+                    </nav>
+                    <!-- /.tabs -->
+                    <div class="full-content">
+                        <div class="tabs_content">
+                            <p class="text">
+                                Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах
+                                издательства DC Comics. Картина будет выпущена компанией Warner Bros. и будет
+                                перезагрузкой всех фильмов о Бэтмене.
+                            </p>
+                            <p class="text">
+                                Фильм является десятым по счёту фильмом из Расширенной вселенной DC. Режиссёром и
+                                сценаристом фильма выступит Мэтт Ривз, а главную роль исполнит Роберт Паттинсон
+                            </p>
+                            <h4 class="text-title">Разработка</h4>
+                            <p class="text">В октябре 2014 года студия Warner Bros. объявила, что в разработке находится
+                                сольный фильм о Бэтмене, роль которого вновь исполнит Бен Аффлек. В июле 2015 года
+                                сообщалось, что Аффлек ведёт переговоры со студией по поводу постановки фильма и
+                                совместного написания сценария с Джеффом Джонсом. </p>
+                            <p class="text">После выхода фильма «Бэтмен против Супермена: На заре справедливости»
+                                руководитель агентства WME Патрик Уайтсел подтвердил, что Аффлек написал сценарий для
+                                сольного фильма о Бэтмене и в настоящий момент его рассматривают студия и DC. В мае 2016
+                                года Джереми Айронс подтвердил, что он появится в фильме про Тёмного Рыцаря. </p>
+                            <p class="text">На Comic-Con в Сан-Диего в июле 2016 года было официально подтверждено, что
+                                Аффлек станет режиссёром картины. В августе 2016 года на одной из страниц Аффлека в
+                                социальных сетях был опубликован тестовый материал, в котором был показан персонаж
+                                Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что Джо Манганьелло сыграет
+                                наёмника Слейда Уилсона, который, возможно, станет главным злодеем фильма.</p>
+                            <!-- /.text -->
+                        </div>
+                        <div class="subscribe">
+                            <h4 class="title-form">Подпишитесь на обновления</h4>
+
+                            <form action="" class="email">
+                                <input type="search" class="search-input" placeholder="Ваш Email">
+                                <button class="search-check"></button> <!-- /.search-check -->
+                            </form>
+                            <!-- /.email -->
+                            <!-- /.title-form -->
+                            <a href="#" class="banner"><img src="/svaznoy.github.io/img/content/banner.jpg" alt=""></a>
+                        </div>
+
+
+                    </div>
+                    <!-- /.full-content -->
+                </div>
+                <!-- /.full-info -->
+            </div>
+            <!-- /.content -->
+        </main>
+        <!-- /.main -->
     </div>
     <!-- /.container -->
 </body>
