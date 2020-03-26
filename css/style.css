@@ -8,7 +8,7 @@ body {
   background-color: #0a090a;
   color: #fff;
   font-family: "Roboto", sans-serif;
-  background-image: url("../img/main-bg.png");
+  background-image: url("https://img/main-bg.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
@@ -109,7 +109,7 @@ body {
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
-  background-image: url("/svaznoy.github.io/img/header/avatar.jpg");
+  background-image: url("https://svaznoy.github.io/img/header/avatar.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   outline: none;
@@ -178,7 +178,7 @@ body {
   content: "";
   width: 30px;
   height: 30px;
-  background-image: url("/svaznoy.github.io/img/main/play.svg");
+  background-image: url("https://svaznoy.github.io/img/main/play.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   margin-right: 15px;
@@ -198,7 +198,7 @@ body {
   content: "";
   width: 30px;
   height: 30px;
-  background-image: url("/svaznoy.github.io/img/main/play.svg");
+  background-image: url("https://svaznoy.github.io/img/main/play.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   transform: rotate(90deg);
@@ -229,6 +229,7 @@ body {
   border: none;
   margin-bottom: 30px;
   cursor: pointer;
+  outline: none;
 }
 
 .short-info {
@@ -344,6 +345,9 @@ body {
 }
 
 @media (max-width: 1200px) {
+  body {
+    background-size: auto;
+  }
   .container {
     max-width: 960px;
   }
@@ -425,7 +429,9 @@ body {
   .actors-title {
     display: none;
   }
-
+  .tabs-item {
+    flex-basis: 100%;
+  }
   .movie-info {
     flex-wrap: wrap;
   }
@@ -447,5 +453,6 @@ body {
 
   .button {
     width: 100%;
+    margin-bottom: 2%;
   }
 }
