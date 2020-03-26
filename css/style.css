@@ -9,6 +9,7 @@ body {
   color: #fff;
   font-family: "Roboto", sans-serif;
   background-image: url("../img/main-bg.png");
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -334,7 +335,7 @@ body {
 }
 
 .form-check {
-  background: #FF8F27;
+  background: #ff8f27;
   border-radius: 0px 5px 5px 0px;
   border: none;
   outline: none;
@@ -442,7 +443,6 @@ body {
     display: inline-block;
     width: 100%;
     margin-top: -20%;
-
   }
 
   .button {
