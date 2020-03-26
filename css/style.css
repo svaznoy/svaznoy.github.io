@@ -9,7 +9,6 @@ body {
   color: #fff;
   font-family: "Roboto", sans-serif;
   background-image: url("../img/main-bg.png");
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -93,12 +92,14 @@ body {
   display: flex;
   align-items: center;
 }
+
 .bookmark {
   border: none;
   background-color: transparent;
   cursor: pointer;
   outline: none;
 }
+
 .avatar {
   margin-left: 20px;
   border: none;
@@ -129,12 +130,14 @@ body {
   line-height: 23px;
   margin-bottom: 38px;
 }
+
 .info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 108px;
 }
+
 .movie-info {
   display: flex;
   align-items: center;
@@ -207,11 +210,11 @@ body {
   background: #ffffff;
   border-radius: 3px;
   color: black;
-  padding: 43px 50px;
+  padding: 3% 4%;
 }
 
 .poster {
-  margin-top: -80px;
+  margin-top: -40%;
   margin-bottom: 20px;
   display: block;
 }
@@ -224,6 +227,11 @@ body {
   line-height: 16px;
   border: none;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.short-info {
+  margin-right: 3%;
 }
 
 .actors-title {
@@ -240,18 +248,43 @@ body {
   list-style: none;
   padding-left: 15px;
   text-decoration: underline;
+  line-height: 150%;
 }
+
+.actors-list-item__link {
+  text-decoration: none;
+  color: #000000;
+}
+
 .full-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .full-info {
-  flex: 0.97;
+  flex: 0.95;
 }
 
 .tabs_content {
   margin-right: 70px;
+}
+
+.text {
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.text-title {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.tabs {
+  margin-bottom: 4%;
+  display: flex;
+  align-items: center;
 }
 
 .tabs-item {
@@ -259,10 +292,10 @@ body {
   text-decoration: none;
   font-size: 18px;
   line-height: 21px;
-  margin-right: 40px;
 }
-.tabs-item-bookmark {
-  display: inline-block;
+
+.tabs-item:not(:last-child) {
+  margin-right: 4%;
 }
 
 .tabs-item-active {
@@ -277,15 +310,142 @@ body {
   margin-bottom: 14px;
 }
 
-.search-check {
-  margin-right: 40px;
-  width: 40px;
-  height: 40px;
+.bookmark-add {
+  vertical-align: sub;
+}
+
+.email {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.form-input {
   border: none;
   outline: none;
-  background-repeat: no-repeat;
+  background: rgba(196, 196, 196, 0.5);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #aeaeae;
+}
+
+.form-check {
+  background: #FF8F27;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  outline: none;
+  padding: 12px;
   cursor: pointer;
-  background-size: 100%;
-  background-image: url("/svaznoy.github.io/img/content/button-check.svg");
-  margin-bottom: 44px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .tabs-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 740px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tabs-item {
+    flex-basis: 20%;
+    line-height: 2;
+  }
+
+  .full-content {
+    flex-wrap: wrap;
+  }
+
+  .tabs_content {
+    margin-bottom: 5%;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .more {
+    display: none;
+  }
+
+  .tabs-item {
+    flex-basis: 33%;
+  }
+
+  .tabs_content {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 578px) {
+  .container {
+    width: 90%;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .search {
+    flex-basis: 100%;
+    order: 3;
+    margin-top: 5%;
+  }
+
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .short-info {
+    margin-bottom: 5%;
+  }
+
+  .actors-list,
+  .actors-title {
+    display: none;
+  }
+
+  .movie-info {
+    flex-wrap: wrap;
+  }
+
+  .play {
+    flex-basis: 100%;
+    margin-top: 10%;
+  }
+
+  .short-info {
+    margin-right: 0;
+  }
+
+  .poster {
+    display: inline-block;
+    width: 100%;
+    margin-top: -20%;
+
+  }
+
+  .button {
+    width: 100%;
+  }
 }
